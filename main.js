@@ -108,7 +108,9 @@ console.log("Somando os números ímpares: ", somaImpares)
 
 // *************************** // ***************************
 
-const desconto20 = (numero) => numero => 20/100
+const desconto20 = (numero) => numero * (20/100)
 const descontando = numeros.map(desconto20)
+
+const numSomaPorcentagem = (total, descontando) => total + descontando
 
 console.log("Desconto 20%: ", descontando)
